@@ -23,31 +23,37 @@
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
+        header h1 {
+            text-align: center;
         }
         .bio {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
+            animation: fadeIn 2s;
         }
         .bio h1 {
             text-align: center;
         }
         .bio p {
             line-height: 1.6;
+        }
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .photos img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -63,6 +69,11 @@
             <p>¡Hola! Mi nombre es [Tu Nombre]. Soy [tu profesión o actividad principal]. A lo largo de mi vida, he tenido la oportunidad de [breve resumen de tus logros y experiencias].</p>
             <p>En mi tiempo libre, disfruto de [tus hobbies o intereses]. Siempre estoy buscando nuevas oportunidades para aprender y crecer, tanto personal como profesionalmente.</p>
             <p>Gracias por visitar mi página. Si deseas saber más sobre mí o contactarme, no dudes en hacerlo.</p>
+        </section>
+        <section class="photos">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
         </section>
     </div>
 </body>
